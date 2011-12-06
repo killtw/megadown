@@ -19,7 +19,7 @@
 <?php
   $urls = explode("\n", $_POST['url']);
   $user_cookie = "4XA3M8EI.DKDUUQMVTRLFXOIBHXQB80X"
-  $cookie = "ver=761e40bd35a29dd83cd4ce463ab55599f4389cb6d75eaef87395226d0ca98babe88fcd85097be748ee4ef7101d1987764de48ab3f8ac8e9c1ac2f405ee76bffc761e40bd35a29dd83cd4ce463ab55599397f5602d02357bfea8ed3931ad2e40ef512553466b22eec94b167731800cd30; user=$user_cookie;";
+  $cookie = "ver=761e40bd35a29dd83cd4ce463ab55599f4389cb6d75eaef87395226d0ca98babe88fcd85097be748ee4ef7101d1987764de48ab3f8ac8e9c1ac2f405ee76bffc761e40bd35a29dd83cd4ce463ab55599397f5602d02357bfea8ed3931ad2e40ef512553466b22eec94b167731800cd30; user={$user_cookie};";
 
   if(!empty($_POST['url']))
   {
