@@ -2,7 +2,7 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Mega取載點</title>
 </head>
 <body>
   <form action="" method="post">
