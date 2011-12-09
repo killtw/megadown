@@ -34,7 +34,7 @@
       $fp = curl_exec($ch);
       curl_close($ch);
 
-      preg_match("/<div class=\"down_ad_pad1\">.+<a href=\"(.*)\" class=\"down_ad_butt1\"><\/a>/si", $fp, $match);
+      preg_match("/<div class=\"download_mumber_b1\".+<a href=\"(.*)\" class=\"download_premium_but\".+<\/a>/si", $fp, $match);
       echo $match[1].'<br />';
     }
   }
