@@ -8,7 +8,7 @@
   <form action="" method="post">
     <p>
       <label for="url">網址</label><br />
-      <textarea name="url" cols="30" rows="10"></textarea>
+      <textarea name="url" cols="40" rows="10"></textarea>
     </p>
     <p>
       <input type="submit" name="submit" value="Submit" />
@@ -24,10 +24,14 @@
   {
     foreach($urls as $url)
     {
+      if(stristr($url, 'multiupload')) $url=(substr_replace($url, 'MU_', -10, 0));
+      if(stristr($url, 'embedupload')) $url=(substr_replace($url, 'MU', -12, 1));
+
       $ch = curl_init();
       $opt = array(
         CURLOPT_URL => $url,
         CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_COOKIE => $cookie
       );
       curl_setopt_array($ch, $opt);
