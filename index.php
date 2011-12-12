@@ -24,8 +24,8 @@
   {
     foreach($urls as $url)
     {
-      if(stristr($url, 'multiupload')) $url=(substr_replace($url, 'MU_', -10, 0));
-      if(stristr($url, 'embedupload')) $url=(substr_replace($url, 'MU', -12, 1));
+      if(stristr($url, 'multiupload')) $url=(substr_replace($url, 'MU_', 27, 0));
+      if(stristr($url, 'embedupload')) $url=(substr_replace($url, 'MU', 28, 1));
 
       $ch = curl_init();
       $opt = array(
